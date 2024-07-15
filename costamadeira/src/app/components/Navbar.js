@@ -1,6 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function Navbar() {
+  useEffect(() => {
+    // Bootstrap's JavaScript requires Popper.js and jQuery, and it should be initialized.
+    // Make sure this script is run on the client-side only
+    if (typeof window !== 'undefined') {
+      require('bootstrap/dist/js/bootstrap.bundle.min.js');
+    }
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -26,5 +36,5 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
