@@ -1,0 +1,15 @@
+.landing {
+    background-image: url("../../img/RENDERS/A-3.jpg");
+    font-weight: 600;
+    
+}
+
+.imgland{
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.firtsBack{
+    font-weight: 400;
+}
