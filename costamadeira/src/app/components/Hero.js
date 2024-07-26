@@ -2,7 +2,7 @@ import Image from "next/image";
 import A5 from "../../img/RENDERS/P-1.jpg";
 import DescriptionImage from "../../img/RENDERS/A-4.jpg";
 import A6 from "../../img/RENDERS/P-3.jpg";
-import A7 from "../../img/RENDERS/P-4.jpg";
+import A7 from "../../img/RENDERS/p-4.jpg";
 import A8 from "../../img/RENDERS/p-4.jpg";
 import A9 from "../../img/RENDERS/A-6.jpg";
 
