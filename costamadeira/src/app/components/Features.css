@@ -51,3 +51,48 @@
   width: 100%;
   height: 200px; /* Ajusta esta altura según tus necesidades */
 }
+
+/* Estilos para la sección de beneficios destacados */
+.benefit-item {
+  background-color: #3A2A1A;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para FAQ */
+.accordion-button {
+  background-color: #A89F91; /* Color de fondo más claro y cálido */
+  color: #3E2A1F; /* Color de texto oscuro */
+  border: 0px solid #6F4F28; /* Borde de color marrón claro */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 1.1rem; /* Tamaño de fuente ajustado */
+  padding: 15px; /* Espacio interior */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #8C6A4F; /* Color de fondo cuando está abierto */
+  color: #F2E8C9; /* Color de texto cuando está abierto */
+}
+
+.accordion-body {
+  background-color: #F2E8C9; /* Color de fondo del contenido */
+  color: #3E2A1F; /* Color de texto oscuro */
+  border-radius: 0 0 8px 8px; /* Bordes redondeados en la parte inferior */
+  padding: 20px; /* Espacio interior */
+}
+
+.accordion-item {
+  border: none; /* Elimina el borde predeterminado de los ítems del acordeón */
+  margin-bottom: 10px; /* Espacio entre ítems */
+}
+
+/* Mejora del diseño general */
+.container {
+  max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+}
+
+h2, .accordion-button, .accordion-body {
+  font-family: 'Roboto', sans-serif; /* Fuente más moderna */
+}

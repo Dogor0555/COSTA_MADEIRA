@@ -13,3 +13,9 @@
 .firtsBack{
     font-weight: 400;
 }
+
+.carousel-sm {
+    max-width: 400px; /* Ajusta el tamaño según tus necesidades */
+    margin: auto;
+  }
+  

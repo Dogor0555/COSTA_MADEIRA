@@ -1,6 +1,10 @@
 import Image from "next/image";
 import A5 from "../../img/RENDERS/P-1.jpg";
-import DescriptionImage from "../../img/RENDERS/P-2.jpg"; // Agrega la imagen adicional aquí
+import DescriptionImage from "../../img/RENDERS/A-4.jpg";
+import A6 from "../../img/RENDERS/P-3.jpg";
+import A7 from "../../img/RENDERS/P-4.jpg";
+import A8 from "../../img/RENDERS/p-4.jpg";
+import A9 from "../../img/RENDERS/A-6.jpg";
 
 export default function Hero() {
   return (
@@ -10,7 +14,7 @@ export default function Hero() {
           src={A5} 
           alt="Costa Madeira Residence"
           layout="fill"
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
           quality={100}
           priority
         />
@@ -48,6 +52,180 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <div className="container py-5">
+        <h2 className="mb-4">Gallery</h2>
+        <div id="carouselExampleIndicators" className="carousel slide carousel-sm" data-bs-ride="carousel">
+          <div className="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <Image 
+                src={A5} 
+                alt="Costa Madeira Image 1"
+                layout="responsive"
+                width={800}
+                height={400}
+                quality={100}
+                style={{ objectFit: "cover" }}
+              />
+              <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
+                <h5>Luxurious Living</h5>
+                <p>Experience unparalleled comfort and style in our premium properties.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Image 
+                src={DescriptionImage} 
+                alt="Costa Madeira Image 2"
+                layout="responsive"
+                width={800}
+                height={400}
+                quality={100}
+                style={{ objectFit: "cover" }}
+              />
+              <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
+                <h5>Modern Design</h5>
+                <p>Discover the contemporary elegance of our latest designs.</p>
+                <h6>Designed for Comfort</h6>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Image 
+                src={A6} 
+                alt="Costa Madeira Image 3"
+                layout="responsive"
+                width={800}
+                height={400}
+                quality={100}
+                style={{ objectFit: "cover" }}
+              />
+              <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
+                <h5>Stunning Views</h5>
+                <p>Enjoy breathtaking views from every corner of our residences.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Image 
+                src={A7} 
+                alt="Costa Madeira Image 4"
+                layout="responsive"
+                width={800}
+                height={400}
+                quality={100}
+                style={{ objectFit: "cover" }}
+              />
+              <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
+                <h5>Prime Location</h5>
+                <p>Experience the best of city living with our strategically located properties.</p>
+              </div>
+            </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div className="container py-5">
+        <h2 className="mb-4">Discover Our Community</h2>
+        <p className="lead mb-4 text-justify">
+          At Costa Madeira, we offer more than just beautiful homes. Our community provides a vibrant, engaging environment where you can connect with like-minded individuals and enjoy a high-quality lifestyle.
+        </p>
+        <div className="row mb-5">
+          <div className="col-md-6">
+            <Image 
+              src={A8} 
+              alt="Community Event"
+              layout="responsive"
+              width={400}
+              height={200}
+              quality={100}
+              style={{ objectFit: "cover" }}
+            />
+            <h4 className="mt-3">Events & Activities</h4>
+            <p className="text-justify">Our community regularly hosts events and activities designed to bring people together and foster a sense of belonging. From social gatherings to recreational activities, there's always something happening at Costa Madeira.</p>
+          </div>
+          <div className="col-md-6">
+            <Image 
+              src={A9} 
+              alt="Community Amenities"
+              layout="responsive"
+              width={400}
+              height={200}
+              quality={100}
+              style={{ objectFit: "cover" }}
+            />
+            <h4 className="mt-3">Exclusive Amenities</h4>
+            <p>Enjoy a range of exclusive amenities, including a state-of-the-art fitness center, luxurious swimming pool, and beautifully landscaped gardens. Our facilities are designed to enhance your living experience and provide a touch of luxury in every aspect of life.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Nueva sección de precios */}
+      <div className="container py-5">
+  <h2 className="mb-4">Pricing Plans</h2>
+  <p className="lead mb-4">Choose the plan that suits your needs and start living the luxury lifestyle you deserve.</p>
+  <div className="row">
+    <div className="col-md-4">
+      <div className="card mb-4 shadow-sm">
+        <div className="card-header">
+          <h4 className="my-0 fw-normal">Basic Plan</h4>
+        </div>
+        <div className="card-body">
+          <h1 className="card-title pricing-card-title">$500<span className="text-muted">/month</span></h1>
+          <ul className="list-unstyled mt-3 mb-4">
+            <li>1 Bedroom</li>
+            <li>1 Bathroom</li>
+            <li>Basic Amenities</li>
+          </ul>
+          <button className="w-100 btn btn-lg btn-primary">Más Información</button>
+        </div>
+      </div>
+    </div>
+    <div className="col-md-4">
+      <div className="card mb-4 shadow-sm">
+        <div className="card-header">
+          <h4 className="my-0 fw-normal">Standard Plan</h4>
+        </div>
+        <div className="card-body">
+          <h1 className="card-title pricing-card-title">$800<span className="text-muted">/month</span></h1>
+          <ul className="list-unstyled mt-3 mb-4">
+            <li>2 Bedrooms</li>
+            <li>1 Bathroom</li>
+            <li>Standard Amenities</li>
+          </ul>
+          <button className="w-100 btn btn-lg btn-primary">Contáctanos para Detalles</button>
+        </div>
+      </div>
+    </div>
+    <div className="col-md-4">
+      <div className="card mb-4 shadow-sm">
+        <div className="card-header">
+          <h4 className="my-0 fw-normal">Premium Plan</h4>
+        </div>
+        <div className="card-body">
+          <h1 className="card-title pricing-card-title">$1200<span className="text-muted">/month</span></h1>
+          <ul className="list-unstyled mt-3 mb-4">
+            <li>3 Bedrooms</li>
+            <li>2 Bathrooms</li>
+            <li>Premium Amenities</li>
+          </ul>
+          <button className="w-100 btn btn-lg btn-primary">Solicitar Consulta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </>
   );
 }
