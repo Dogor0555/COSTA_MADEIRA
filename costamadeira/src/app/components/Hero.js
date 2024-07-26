@@ -5,6 +5,7 @@ import A6 from "../../img/RENDERS/P-3.jpg";
 import A7 from "../../img/RENDERS/p-4.jpg";
 import A8 from "../../img/RENDERS/p-4.jpg";
 import A9 from "../../img/RENDERS/A-6.jpg";
+import "./Hero.css"; // Asegúrate de que el CSS esté correctamente importado
 
 export default function Hero() {
   return (
@@ -14,7 +15,7 @@ export default function Hero() {
           src={A5} 
           alt="Costa Madeira Residence"
           layout="fill"
-          style={{ objectFit: "cover" }}
+          objectFit="cover"
           quality={100}
           priority
         />
@@ -71,7 +72,7 @@ export default function Hero() {
                 width={800}
                 height={400}
                 quality={100}
-                style={{ objectFit: "cover" }}
+                objectFit="cover"
               />
               <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
                 <h5>Luxurious Living</h5>
@@ -86,7 +87,7 @@ export default function Hero() {
                 width={800}
                 height={400}
                 quality={100}
-                style={{ objectFit: "cover" }}
+                objectFit="cover"
               />
               <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
                 <h5>Modern Design</h5>
@@ -102,7 +103,7 @@ export default function Hero() {
                 width={800}
                 height={400}
                 quality={100}
-                style={{ objectFit: "cover" }}
+                objectFit="cover"
               />
               <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
                 <h5>Stunning Views</h5>
@@ -117,7 +118,7 @@ export default function Hero() {
                 width={800}
                 height={400}
                 quality={100}
-                style={{ objectFit: "cover" }}
+                objectFit="cover"
               />
               <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
                 <h5>Prime Location</h5>
@@ -150,10 +151,10 @@ export default function Hero() {
               width={400}
               height={200}
               quality={100}
-              style={{ objectFit: "cover" }}
+              objectFit="cover"
             />
             <h4 className="mt-3">Events & Activities</h4>
-            <p className="text-justify">Our community regularly hosts events and activities designed to bring people together and foster a sense of belonging. From social gatherings to recreational activities, there&apos;s always something happening at Costa Madeira.</p>
+            <p className="text-justify">Our community regularly hosts events and activities designed to bring people together and foster a sense of belonging. From social gatherings to recreational activities, there's always something happening at Costa Madeira.</p>
           </div>
           <div className="col-md-6">
             <Image 
@@ -163,7 +164,7 @@ export default function Hero() {
               width={400}
               height={200}
               quality={100}
-              style={{ objectFit: "cover" }}
+              objectFit="cover"
             />
             <h4 className="mt-3">Exclusive Amenities</h4>
             <p>Enjoy a range of exclusive amenities, including a state-of-the-art fitness center, luxurious swimming pool, and beautifully landscaped gardens. Our facilities are designed to enhance your living experience and provide a touch of luxury in every aspect of life.</p>
@@ -176,8 +177,8 @@ export default function Hero() {
         <p className="lead mb-4">Choose the plan that suits your needs and start living the luxury lifestyle you deserve.</p>
         <div className="row">
           <div className="col-md-4">
-            <div className="card mb-4 shadow-sm">
-              <div className="card-header">
+            <div className="card mb-4 shadow-sm pricing-card">
+              <div className="card-header bg-light">
                 <h4 className="my-0 fw-normal">Basic Plan</h4>
               </div>
               <div className="card-body">
@@ -187,41 +188,39 @@ export default function Hero() {
                   <li>1 Bathroom</li>
                   <li>Basic Amenities</li>
                 </ul>
-                <button type="button" className="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                <button type="button" className="w-100 btn btn-lg btn-primary">Sign up</button>
               </div>
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card mb-4 shadow-sm">
-              <div className="card-header">
+            <div className="card mb-4 shadow-sm pricing-card">
+              <div className="card-header bg-light">
                 <h4 className="my-0 fw-normal">Standard Plan</h4>
+              </div>
+              <div className="card-body">
+                <h1 className="card-title pricing-card-title">$750<span className="text-muted">/month</span></h1>
+                <ul className="list-unstyled mt-3 mb-4">
+                  <li>2 Bedrooms</li>
+                  <li>2 Bathrooms</li>
+                  <li>Standard Amenities</li>
+                </ul>
+                <button type="button" className="w-100 btn btn-lg btn-primary">Sign up</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4 shadow-sm pricing-card">
+              <div className="card-header bg-light">
+                <h4 className="my-0 fw-normal">Premium Plan</h4>
               </div>
               <div className="card-body">
                 <h1 className="card-title pricing-card-title">$1000<span className="text-muted">/month</span></h1>
                 <ul className="list-unstyled mt-3 mb-4">
-                  <li>2 Bedrooms</li>
-                  <li>2 Bathrooms</li>
-                  <li>Access to Gym</li>
-                  <li>Swimming Pool</li>
-                </ul>
-                <button type="button" className="w-100 btn btn-lg btn-outline-primary">Get started</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card mb-4 shadow-sm">
-              <div className="card-header">
-                <h4 className="my-0 fw-normal">Premium Plan</h4>
-              </div>
-              <div className="card-body">
-                <h1 className="card-title pricing-card-title">$1500<span className="text-muted">/month</span></h1>
-                <ul className="list-unstyled mt-3 mb-4">
                   <li>3 Bedrooms</li>
                   <li>3 Bathrooms</li>
-                  <li>Private Garden</li>
-                  <li>VIP Amenities</li>
+                  <li>Premium Amenities</li>
                 </ul>
-                <button type="button" className="w-100 btn btn-lg btn-outline-primary">Contact us</button>
+                <button type="button" className="w-100 btn btn-lg btn-primary">Sign up</button>
               </div>
             </div>
           </div>
