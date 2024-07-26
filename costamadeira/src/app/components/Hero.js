@@ -153,7 +153,7 @@ export default function Hero() {
               style={{ objectFit: "cover" }}
             />
             <h4 className="mt-3">Events & Activities</h4>
-            <p className="text-justify">Our community regularly hosts events and activities designed to bring people together and foster a sense of belonging. From social gatherings to recreational activities, there's always something happening at Costa Madeira.</p>
+            <p className="text-justify">Our community regularly hosts events and activities designed to bring people together and foster a sense of belonging. From social gatherings to recreational activities, there&apos;s always something happening at Costa Madeira.</p>
           </div>
           <div className="col-md-6">
             <Image 
@@ -171,61 +171,62 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Nueva sección de precios */}
       <div className="container py-5">
-  <h2 className="mb-4">Pricing Plans</h2>
-  <p className="lead mb-4">Choose the plan that suits your needs and start living the luxury lifestyle you deserve.</p>
-  <div className="row">
-    <div className="col-md-4">
-      <div className="card mb-4 shadow-sm">
-        <div className="card-header">
-          <h4 className="my-0 fw-normal">Basic Plan</h4>
-        </div>
-        <div className="card-body">
-          <h1 className="card-title pricing-card-title">$500<span className="text-muted">/month</span></h1>
-          <ul className="list-unstyled mt-3 mb-4">
-            <li>1 Bedroom</li>
-            <li>1 Bathroom</li>
-            <li>Basic Amenities</li>
-          </ul>
-          <button className="w-100 btn btn-lg btn-primary">Más Información</button>
+        <h2 className="mb-4">Pricing Plans</h2>
+        <p className="lead mb-4">Choose the plan that suits your needs and start living the luxury lifestyle you deserve.</p>
+        <div className="row">
+          <div className="col-md-4">
+            <div className="card mb-4 shadow-sm">
+              <div className="card-header">
+                <h4 className="my-0 fw-normal">Basic Plan</h4>
+              </div>
+              <div className="card-body">
+                <h1 className="card-title pricing-card-title">$500<span className="text-muted">/month</span></h1>
+                <ul className="list-unstyled mt-3 mb-4">
+                  <li>1 Bedroom</li>
+                  <li>1 Bathroom</li>
+                  <li>Basic Amenities</li>
+                </ul>
+                <button type="button" className="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4 shadow-sm">
+              <div className="card-header">
+                <h4 className="my-0 fw-normal">Standard Plan</h4>
+              </div>
+              <div className="card-body">
+                <h1 className="card-title pricing-card-title">$1000<span className="text-muted">/month</span></h1>
+                <ul className="list-unstyled mt-3 mb-4">
+                  <li>2 Bedrooms</li>
+                  <li>2 Bathrooms</li>
+                  <li>Access to Gym</li>
+                  <li>Swimming Pool</li>
+                </ul>
+                <button type="button" className="w-100 btn btn-lg btn-outline-primary">Get started</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4 shadow-sm">
+              <div className="card-header">
+                <h4 className="my-0 fw-normal">Premium Plan</h4>
+              </div>
+              <div className="card-body">
+                <h1 className="card-title pricing-card-title">$1500<span className="text-muted">/month</span></h1>
+                <ul className="list-unstyled mt-3 mb-4">
+                  <li>3 Bedrooms</li>
+                  <li>3 Bathrooms</li>
+                  <li>Private Garden</li>
+                  <li>VIP Amenities</li>
+                </ul>
+                <button type="button" className="w-100 btn btn-lg btn-outline-primary">Contact us</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="col-md-4">
-      <div className="card mb-4 shadow-sm">
-        <div className="card-header">
-          <h4 className="my-0 fw-normal">Standard Plan</h4>
-        </div>
-        <div className="card-body">
-          <h1 className="card-title pricing-card-title">$800<span className="text-muted">/month</span></h1>
-          <ul className="list-unstyled mt-3 mb-4">
-            <li>2 Bedrooms</li>
-            <li>1 Bathroom</li>
-            <li>Standard Amenities</li>
-          </ul>
-          <button className="w-100 btn btn-lg btn-primary">Contáctanos para Detalles</button>
-        </div>
-      </div>
-    </div>
-    <div className="col-md-4">
-      <div className="card mb-4 shadow-sm">
-        <div className="card-header">
-          <h4 className="my-0 fw-normal">Premium Plan</h4>
-        </div>
-        <div className="card-body">
-          <h1 className="card-title pricing-card-title">$1200<span className="text-muted">/month</span></h1>
-          <ul className="list-unstyled mt-3 mb-4">
-            <li>3 Bedrooms</li>
-            <li>2 Bathrooms</li>
-            <li>Premium Amenities</li>
-          </ul>
-          <button className="w-100 btn btn-lg btn-primary">Solicitar Consulta</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     </>
   );
 }
