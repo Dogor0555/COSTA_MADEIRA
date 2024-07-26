@@ -1,7 +1,7 @@
 import Image from "next/image";
 import A1 from "../../img/RENDERS/P-1.jpg";
 import A2 from "../../img/RENDERS/P-3.jpg";
-import A3 from "../../img/RENDERS/P-4.jpg";
+import A3 from "../../img/RENDERS/P-3.jpg";
 import "./Features.css"; // Importa el CSS personalizado
 
 const featuresData = [
