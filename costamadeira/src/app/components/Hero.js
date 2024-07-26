@@ -154,7 +154,7 @@ export default function Hero() {
               objectFit="cover"
             />
             <h4 className="mt-3">Events & Activities</h4>
-            <p className="text-justify">Our community regularly hosts events and activities designed to bring people together and foster a sense of belonging. From social gatherings to recreational activities, there's always something happening at Costa Madeira.</p>
+            <p className="text-justify">Our community regularly hosts events and activities designed to bring people together and foster a sense of belonging. From social gatherings to recreational activities, there&#39;s always something happening at Costa Madeira.</p>
           </div>
           <div className="col-md-6">
             <Image 
@@ -198,11 +198,11 @@ export default function Hero() {
                 <h4 className="my-0 fw-normal">Standard Plan</h4>
               </div>
               <div className="card-body">
-                <h1 className="card-title pricing-card-title">$750<span className="text-muted">/month</span></h1>
+                <h1 className="card-title pricing-card-title">$800<span className="text-muted">/month</span></h1>
                 <ul className="list-unstyled mt-3 mb-4">
                   <li>2 Bedrooms</li>
                   <li>2 Bathrooms</li>
-                  <li>Standard Amenities</li>
+                  <li>Additional Amenities</li>
                 </ul>
                 <button type="button" className="w-100 btn btn-lg btn-primary">Sign up</button>
               </div>
@@ -214,7 +214,7 @@ export default function Hero() {
                 <h4 className="my-0 fw-normal">Premium Plan</h4>
               </div>
               <div className="card-body">
-                <h1 className="card-title pricing-card-title">$1000<span className="text-muted">/month</span></h1>
+                <h1 className="card-title pricing-card-title">$1200<span className="text-muted">/month</span></h1>
                 <ul className="list-unstyled mt-3 mb-4">
                   <li>3 Bedrooms</li>
                   <li>3 Bathrooms</li>
