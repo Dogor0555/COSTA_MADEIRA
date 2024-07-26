@@ -72,7 +72,7 @@ export default function Features() {
           <div className="col-md-4">
             <div className="benefit-item text-center">
               <h4 style={{ color: '#F2E8C9' }}>Customer Satisfaction</h4>
-              <p style={{ color: '#F2E8C9' }}>We prioritize our clients' needs and strive to exceed expectations.</p>
+              <p style={{ color: '#F2E8C9' }}>We prioritize our clients&apos; needs and strive to exceed expectations.</p> {/* Escapa la comilla simple aquí */}
             </div>
           </div>
           <div className="col-md-4">
