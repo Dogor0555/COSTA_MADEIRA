@@ -1,4 +1,3 @@
-// Contact.js
 'use client';
 
 import Image from "next/image";
@@ -12,7 +11,6 @@ export default function Contact() {
     name: "",
     email: "",
     phone: "",
-    subject: "",
     message: "",
     newsletter: false,
   });
@@ -28,14 +26,31 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validateForm(form);
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
       setSubmitted(true);
-      // Aquí puedes manejar el envío del formulario
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(form)
+        });
+        const data = await response.json();
+        if (response.ok) {
+          alert('Email enviado con éxito');
+        } else {
+          alert('Error al enviar el email: ' + data.message);
+        }
+      } catch (error) {
+        console.error('Error al enviar el email:', error);
+        alert('Error al enviar el email');
+      }
     }
   };
 
@@ -45,7 +60,6 @@ export default function Contact() {
     if (!values.email) errors.email = "Email is required.";
     else if (!/\S+@\S+\.\S+/.test(values.email)) errors.email = "Email address is invalid.";
     if (!values.phone) errors.phone = "Phone number is required.";
-    if (!values.subject) errors.subject = "Subject is required.";
     if (!values.message) errors.message = "Message is required.";
     return errors;
   };
@@ -99,20 +113,6 @@ export default function Contact() {
                       onChange={handleChange}
                     />
                     {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
-                  </div>
-                  <div className="input-group mb-3">
-                    <span className="input-group-text"><FaComments /></span>
-                    <select
-                      name="subject"
-                      className={`form-control ${errors.subject ? "is-invalid" : ""}`}
-                      value={form.subject}
-                      onChange={handleChange}
-                    >
-                      <option value="">Select a Subject</option>
-                      <option value="subject1">Subject 1</option>
-                      <option value="subject2">Subject 2</option>
-                    </select>
-                    {errors.subject && <div className="invalid-feedback">{errors.subject}</div>}
                   </div>
                   <div className="mb-3">
                     <textarea
