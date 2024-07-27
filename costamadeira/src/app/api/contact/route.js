@@ -24,8 +24,8 @@ export async function POST(request) {
     // Envía el correo electrónico
     await transporter.sendMail({
         from: email,
-        to: 'marcosteven0718@gmail.com',
-        subject: `Futuro cliente se quiere comunicar: ${subject}`,
+        to: 'moisesgonzalez747@gmail.com',
+        subject: `Futuro cliente se quiere comunicar: `,
         html: `
           <html>
             <body style="font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
