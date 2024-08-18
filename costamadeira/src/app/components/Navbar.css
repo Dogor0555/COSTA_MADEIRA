@@ -1,53 +1,45 @@
-/* Navbar.css */
-.navbar {
-    position: fixed;
+/* Navbar.css */.navbar {
+  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1030; /* Asegúrate de que la barra de navegación esté sobre otros elementos */
-  background-color: rgba(42, 26, 10, 0.8); /* Fondo translúcido */
-  backdrop-filter: blur(10px); /* Desenfoque para un efecto más suave */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  z-index: 1030; /* Asegúrate de que la barra de navegación esté sobre otros elementos */background-color: rgba(42, 26, 10, 0.8); /* Fondo translúcido */
+  backdrop-filter: blur(10px); /* Desenfoque para un efecto más suave */box-shadow: 02px4pxrgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Otros estilos existentes */.navbar-nav.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  padding: 10px15px;
+  border-radius: 5px;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #FFD700; /* Color dorado para el subrayado */transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Cambia a color dorado al pasar el mouse */background-color: rgba(255, 215, 0, 0.1); /* Fondo dorado sutil */transform: translateY(-5px); /* Eleva el enlace al pasar el mouse */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,...'); /* Personaliza el ícono del toggle */
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    transition: max-height 0.3s ease; /* Animación suave al abrir/cerrar el menú */
   }
-  
-  /* Otros estilos existentes */
-  .navbar-nav .nav-item {
-    position: relative;
-  }
-  
-  .nav-link {
-    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
-  
-  .nav-link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: #FFD700; /* Color dorado para el subrayado */
-    transition: width 0.3s ease;
-  }
-  
-  .nav-link:hover::before {
-    width: 100%;
-  }
-  
-  .nav-link:hover {
-    color: #FFD700; /* Cambia a color dorado al pasar el mouse */
-    background-color: rgba(255, 215, 0, 0.1); /* Fondo dorado sutil */
-    transform: translateY(-5px); /* Eleva el enlace al pasar el mouse */
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml,...'); /* Personaliza el ícono del toggle */
-  }
-  
-  @media (max-width: 992px) {
-    .navbar-collapse {
-      transition: max-height 0.3s ease; /* Animación suave al abrir/cerrar el menú */
-    }
-  }
-  
+}

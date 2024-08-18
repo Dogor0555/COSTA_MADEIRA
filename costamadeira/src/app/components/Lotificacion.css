@@ -1,0 +1,37 @@
+/* Lotificacion.css */
+
+.lote-container {
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lote-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #e9e1d6 !important; /* Color de hover más oscuro */
+}
+
+#lote-detalles .details-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#lote-detalles .details-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon-animation {
+  animation: fadeInScale 0.5s ease-in-out;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

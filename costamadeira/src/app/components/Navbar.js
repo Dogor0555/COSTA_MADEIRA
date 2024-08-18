@@ -12,7 +12,7 @@ export default function Navbar() {
     if (typeof window !== 'undefined') {
       import('bootstrap/dist/js/bootstrap.bundle.min.js');
     }
-  }, []);
+  }, []); 
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
@@ -53,6 +53,17 @@ export default function Navbar() {
                 duration={500}
               >
                 <span className="nav-text">Features</span>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link 
+                className="nav-link" 
+                to="lotification" 
+                spy={true} 
+                smooth={true} 
+                duration={500}
+              >
+                <span className="nav-text">Availability</span>
               </Link>
             </li>
             <li className="nav-item">
