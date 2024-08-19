@@ -35,3 +35,18 @@
     transform: scale(1);
   }
 }
+
+
+/* Lotificacion.css */
+.zoom-container {
+  overflow: hidden; /* Para ocultar cualquier parte de la imagen que salga del contenedor */
+  border-radius: 8px; /* Para hacer que los bordes de la imagen sean redondeados */
+}
+
+.zoom-container img {
+  transition: transform 0.5s ease; /* Efecto suave de transición */
+}
+
+.zoom-container img:hover {
+  transform: scale(1.1); /* Incrementa el tamaño de la imagen al hacer hover */
+}

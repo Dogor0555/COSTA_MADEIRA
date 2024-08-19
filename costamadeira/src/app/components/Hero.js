@@ -33,7 +33,7 @@ export default function Hero() {
       <div className="container py-5">
         <div className="row">
           <div className="col-md-6">
-            <h2 className="mb-4">About Costa Madeira</h2>
+            <h2 className="mb-4 text-light">About Costa Madeira</h2>
             <p>
               Costa Madeira is a premier real estate development offering luxury homes in a beautiful, serene environment. Our properties are designed with modern amenities and exquisite architecture to provide you with the ultimate living experience. Whether you are looking for a place to call home or an investment opportunity, Costa Madeira has something to offer.
             </p>
@@ -55,7 +55,7 @@ export default function Hero() {
       </div>
 
       <div className="container py-5">
-        <h2 className="mb-4">Gallery</h2>
+        <h2 className="mb-4 text-light">Gallery</h2>
         <div id="carouselExampleIndicators" className="carousel slide carousel-sm" data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -138,7 +138,7 @@ export default function Hero() {
       </div>
 
       <div className="container py-5">
-        <h2 className="mb-4">Discover Our Community</h2>
+        <h2 className="mb-4 text-light">Discover Our Community</h2>
         <p className="lead mb-4 text-justify">
           At Costa Madeira, we offer more than just beautiful homes. Our community provides a vibrant, engaging environment where you can connect with like-minded individuals and enjoy a high-quality lifestyle.
         </p>
@@ -173,7 +173,7 @@ export default function Hero() {
       </div>
 
       <div className="container py-5">
-        <h2 className="mb-4">Pricing Plans</h2>
+        <h2 className="mb-4 text-light">Pricing Plans</h2>
         <p className="lead mb-4">Choose the plan that suits your needs and start living the luxury lifestyle you deserve.</p>
         <div className="row">
           <div className="col-md-4">

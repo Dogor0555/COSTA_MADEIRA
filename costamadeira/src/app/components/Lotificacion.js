@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { db, collection, getDocs } from '../../services/firebase/index.js';
 import { FaRulerCombined, FaDollarSign, FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import Mapa from "../../img/RENDERS/Mapa.png";
 import "./Lotificacion.css";
 
 const Lotificacion = () => {
@@ -128,6 +130,19 @@ const Lotificacion = () => {
               <p className="h4 mb-4 text-dark">Select to watch details.</p>
             </div>
           )}
+
+          {/* Aquí agregamos la imagen del mapa debajo de los detalles */}
+          <div className="mt-4">
+  <h2 className="h5 mb-3 text-white">Map</h2>
+  <div className="zoom-container text-center">
+    <Image
+      src={Mapa} // Cambia esta ruta a la imagen que subiste
+      alt="Mapa de la Lotificación"
+      className="img-fluid rounded"
+      style={{ maxHeight: "1000px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+    />
+  </div>
+</div>
         </div>
       </div>
     </div>
